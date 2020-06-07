@@ -1,0 +1,101 @@
+body {background-color: #343E7A;}
+
+#logo-car {
+    text-align: center;
+    display:block; 
+    margin:0;
+    margin-top: 20px;
+    width: 100px;
+}
+
+#logo {
+    text-align: center;
+    display:block; 
+    margin:0;
+    margin-top: 40px;
+    padding: 50px 90px 10px
+}
+
+.enter-text-box {
+    width: 180px; 
+    height: 30px;
+} 
+
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(12px 12px 7px #585656ce);
+    filter: drop-shadow(12px 12px 7px #585656ce)
+}
+
+.icon-action:hover {
+    transform : scale(1.2);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.nqu-size {
+    width: 20px;
+}
+
+#car-map {
+    float: left; 
+    text-align: center; 
+    padding: 25px 60px 10px; 
+    width: 50%;
+}
+
+#web-right-div {
+    text-align: center; 
+    padding-top: 20px;
+}
+
+#right-title {
+    margin: 10px; 
+    font-size: 3em; 
+    color: aliceblue; 
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400; 
+    text-shadow: 2px 2px 4px #3e3e3ee8;
+}
+
+#right-sub-title {
+    margin: 10px 0px 50px; 
+    font-size: 2em; 
+    color: aliceblue; 
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400; 
+    text-shadow: 2px 2px 4px #3e3e3ee8;
+}
+
+
+#right-question {
+    margin: 10px; 
+    font-size: 1.5em; 
+    color: aliceblue; 
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400;
+}
+
+.car-point {
+    margin: 10px; 
+    font-size: 1.5em; 
+    color: aliceblue; 
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400; 
+    padding-top: 15px; 
+    text-shadow: 2px 2px 4px #3e3e3ee8;
+}
+
+
+#err-massage {
+    margin: 10px; 
+    font-size: 1.5em; 
+    color: #F90B0B; 
+    font-family: 'Josefin Sans', sans-serif;  
+    font-weight: 400; 
+    padding-top: 15px; 
+    text-shadow: 2px 2px 4px #3e3e3ee8;
+}
+
+
+    
