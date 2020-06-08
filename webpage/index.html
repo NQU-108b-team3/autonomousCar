@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Autonomous Car Route Navigation based on A* Algorithm</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Imperial
+    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <!--==========================
+  Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/logo.png" width="250" height="209" alt="Imperial">
+        </div>
+
+        <h1>基於A*演算法路線規劃之智能自走車</h1>
+        <h2>Autonomous Car Route Navigation <span class="rotating">based on A* Algorithm</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">Get Strated</a>
+          <a href="#structure" class="btn-services">System Structure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">Motivation</a></li>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#component">Components</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!--==========================
+  About Section
+  ============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Motivation</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+
+        <div class="col-lg-6 about-img">
+          <img src="img/about-img.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 about-content">
+          <h2 class="about-title">The reserch from IoT to AIoT</h2>
+          <p class="about-text">
+            &nbsp; &nbsp; Since the rise of smartphones, the applications related to the Internet of Things (IoT) technology has flourished. 
+            Extending the management of applications from the IoT, such as wearable devices, Intelligent home appliances, 
+            smart cities, and Industrial Internet of Things (IIoT). From the description above about the IoT development, 
+            we know that the technology of the IoT has become an important topic in the era of science and technology nowadays. 
+            Moreover, the system integration with other professional industries, for instances, 
+            the autonomous car in the field of Internet of Vehicles (IoV) and the trend of Artificial Intelligence Internet of Things (AIoT)
+             which science and technology have recently developed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Structure Section
+  ============================-->
+  <section id="structure">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">System Structure</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-6 structure-content">
+          <h2 class="structure-title">Autonomous Car</h2>
+          <p class="structure-text">
+            &nbsp; &nbsp; In the system structure, we place a Raspberry Pi on the Autonomous Car for sending its position in a period and receiving
+            the path to the destination from the webserver. The webserver is built using Raspberry Pi and constructed in Flask with Python, users
+            can access to the server with any device that has a browser and enter the destination that the users wanted the car to move. Then the 
+            server receives the destination point and calculate the path using A* algorithm , after that the server sends the path to the car. The 
+            webage then visualized the car position synchronously when the car moves.
+          </p>
+        </div>
+
+        <div class="col-lg-6 structure-img">
+          <img src="img/structure.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Subscrbe Section
+  ============================-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="subscribe-title">WE IoT, WE CLOSER</h3>
+          <p class="subscribe-text">IoT lives in every pieces in your life. We and IoT are never apart, maybe in distance but never in heart</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Components Section
+  ============================-->
+  <section id="component">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Components</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">
+            Using Raspberry Pi running Ubuntu OS as the A* algorithm server and the control center of the autonomous car, <br>
+            with MQTT protocol communicating between the server and the car, send the current position to the browser with socket.io using Flask that written in python
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-1.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Autonomous Car</b></p>
+              <span class="hsdescon">is a car, so cool</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-2.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Raspberry Pi</b></p>
+              <span class="hsdescon">
+                Play as the webserver and <br>
+                the control center on the car
+            </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-3.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Ubuntu OS</b></p>
+              <span class="hsdescon">
+                Operating System that runs on<br>
+                Raspberry Pi
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-4.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>MQTT</b></p>
+              <span class="hsdescon">The transport protocol used to communicate between 2 Raspberry Pi</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-5.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Python</b></p>
+              <span class="hsdescon">The programming language used in the project</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-6.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Flask</b></p>
+              <span class="hsdescon">Web framework on the server</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-7.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>Socket.io</b></p>
+              <span class="hsdescon">Using websocket to send message to the browser</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="component-item" style="background-image: url(img/portfolio-8.jpg);">
+            <div class="details">
+              <p class="hsdes"><b>A* algorithm</b></p>
+              <span class="hsdescon">The algorithm to find a path in the map</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Demo Section
+  ============================-->
+  
+  <section id="demo">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Demo</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">This is the demo to the project</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="">
+          <div id="vidvid">
+            <video loop="true" autoplay="autoplay" muted="true" width="580">
+              <source src="vid/demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div id="viddes">
+            <h3>
+              <b>Step 1: Enter the destination point (Client)</b>
+            </h3>
+            <p class="vidp">
+              User enter the destination coordinate <br>
+              that wanted the car to move
+            </p>
+
+            <h3>
+              <b>Step 2: Route planning (Server)</b>
+            </h3>
+            <p class="vidp">
+              Server then plans the route with the destination
+            </p>
+
+            <h3>
+              <b>Step 3: Process</b>
+            </h3>
+            <p class="vidp">
+              The car receives the path sent from the server, <br>
+              and moves to the destination according to the path
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Team Section
+  ============================-->
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Team</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">These are members in the team</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+            <h4>陳冠丞</h4>
+            <span>Leader</span>
+            <div class="social">
+              s110610208@student.nqu.edu.tw
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-2.png" alt=""></div>
+            <h4>方洛飛</h4>
+            <span>Member</span>
+            <div class="social">
+              s110610525@student.nqu.edu.tw
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+            <h4>呂楷茗</h4>
+            <span>Member</span>
+            <div class="social">
+              s110610515@student.nqu.edu.tw
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+            <h4>陳士茵</h4>
+            <span>Member</span>
+            <div class="social">
+              s110610529@student.nqu.edu.tw
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Contact us if you have any question or advise</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="cont">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>
+                No. 1, Daxue Rd., Jinning Township, Kinmen County 892, Taiwan (R.O.C.)<br>
+                National Quemoy University, Department of Computer Science and Information Engineering
+              </p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>loliconkea@gmail.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+886-82-313530</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <strong>Autonomous Car</strong> Route Navigation based on A* Algorithm
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+            -->
+            NQU 108b project
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+
+</body>
+
+</html>
